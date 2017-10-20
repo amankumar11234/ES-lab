@@ -107,28 +107,6 @@ int main(void)
 					
 				}
 				break;
-				/*c++;
-				switch(op){
-					case 1:	val[0] = row * 3 + col;
-					case 2:	op = sign[col];
-					case 3:	val[1] = row * 3 + col;
-				}
-				if(c==3){
-					switch(op){
-						case '+' :  res = val[0]+val[1];
-									break;
-						case '-' : 	res = val[0]-val[1];
-									break;
-					}
-					if (res<0){
-						neg_fl = 1;
-						res *= -1;
-					}
-					for(i=0; i<2; i++){
-						val[i] = res%10;
-						res /=10;
-					}
-				}*/
 			}
 
 		}		
