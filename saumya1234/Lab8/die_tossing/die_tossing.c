@@ -32,15 +32,7 @@ int main(void)
 	lcd_init();
    LPC_PINCON->PINSEL4=0;
    LPC_GPIO2->FIODIR=0;
-	//temp1=0x80;
-		//lcd_com();
-		//delay_lcd(800);
-		//lcd_puts(&Msg3[0]);
-
-		//temp1=0xC0;
-		//lcd_com();
-		//delay_lcd(800);
-		//lcd_puts(&Msg4[0]);
+	
   while(1)
 		{ if(!(LPC_GPIO2->FIOPIN&(1<<12)))
 			{ p=rand()%6;
