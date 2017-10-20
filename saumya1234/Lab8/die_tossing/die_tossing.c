@@ -42,10 +42,10 @@ int main(void)
 		//delay_lcd(800);
 		//lcd_puts(&Msg4[0]);
   while(1)
-		{ if(!(LPC_GPIO2->FIOPIN&(1<<12)))
-			{ p=rand()%6;
+		{ if(!(LPC_GPIO2->FIOPIN&(1<<12))){ 
+			p=rand()%6;
 				p++;
-				if(p==1)
+				/*if(p==1)
 				{Msg1[0]='1';}
 				if(p==2)
 				{Msg1[0]='2';}
@@ -56,7 +56,9 @@ int main(void)
 				if(p==5)
 				{Msg1[0]='5';}
 				if(p==6)
-				{Msg1[0]='6';}
+				{Msg1[0]='6';}*/
+			 	
+			 	Msg1[0]=(char)p;
 				Msg1[1]='\0';
 				temp1=0x80;
 		    lcd_com();
